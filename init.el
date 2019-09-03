@@ -636,4 +636,10 @@ dump."
 This is an auto-generated function, do not modify its content directly, use
 Emacs customize menu instead.
 This function is called at the very end of Spacemacs initialization."
+  (setq browse-url-browser-function 'browse-url-generic
+        browse-url-generic-program "google-chrome")
+  (setq org-file-apps
+        (quote
+         ((auto-mode . emacs)
+          ("\\.pdf\\'" . "evince %s"))))
 )
